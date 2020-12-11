@@ -567,6 +567,7 @@ if __name__ == "__main__":
     print("{0} v{1} ({2})\n".format(SCRIPT_NAME, SCRIPT_VERSION, cgx_session.controller))
 
     # interactive or cmd-line specified initial login
+    mytoken = None
     if mytoken:
         print("Found token. Using it to log in.")
         cgx_session.interactive.use_token(mytoken)
